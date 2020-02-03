@@ -1,0 +1,64 @@
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section
+{
+	width: 750px;
+	height: 750px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bloc
+{
+	width: 250px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+
+nav
+{
+	width: 250px;
+	height: 250px;
+	background: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bloc img
+{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .5s ease;
+}
+
+.bas:hover img
+{
+	transform: translateY(100%);
+}
+
+.haut:hover img 
+{
+	transform: translateY(-100%);
+}
+
+.droite:hover img
+{
+	transform: translateX(100%);
+}
+
+.gauche:hover img
+{
+	transform: translateX(-100%);
+}
+
